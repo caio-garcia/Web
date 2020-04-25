@@ -9,8 +9,9 @@ You can move rover around baed on the following commands
 
 You should set Rover's direction before moving it *forwards* or *backwards*:
 
-	a) **R** for turning it *Right*;
-	b) **L** for turning it *Left*.
+a) **R** for turning it *Right*;
+
+b) **L** for turning it *Left*.
 
 Console will tell you what direction is Rover is facing after turning it (default direction is North).
 
@@ -18,8 +19,9 @@ Console will tell you what direction is Rover is facing after turning it (defaul
 
 You may move rover forwards or backwards:
 
-	a) **F** for *Forward*;
-	b) **B** for *Backward*.
+a) **F** for *Forward*;
+
+b) **B** for *Backward*.
 
 3. Example of Command:
 
