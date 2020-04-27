@@ -40,3 +40,5 @@ That is:
 
 You won't be able to move off the 10x10 grid (be careful!);
 At the end of the command processing, console will display rover's final positions as well as its full travel history on a coordinate basis *(x;y)*.
+
+I have also included some obstacles! Would you be able to find all of them?

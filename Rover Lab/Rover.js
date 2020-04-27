@@ -3,7 +3,7 @@
 //NASA has placed the rover on a 10x10 grid to make sure all is well before we ship it off to Mars
 
 
-// Rover Object Goes Here // ======================
+// Obstacles & Rover Objects
 let obstacles = [{x:1,y:1}, {x:0,y:1}];
 
 let obstacleX = []
@@ -23,7 +23,7 @@ let theRover ={
 }
 
 
-// ======================
+// Functions
 function turnning(rover,command){
     if (command == 'L'){
     switch (rover.direction){
@@ -74,12 +74,12 @@ function moveForward(rover){
     case 'E':
         rover.x--;
         break;
-    } if (rover.y >= 0 && rover.y <= 10 && rover.x >= 0 && rover.x <= 10){
+    } if ((rover.y >= 0 && rover.y <= 10 && rover.x >= 0 && rover.x <= 10) && (!(obstacleX.includes(rover.x) && obstacleY.includes(rover.y)))){
         let newposition = {x:rover.x,y:rover.y};
         rover.travelLog.push(newposition);
         console.log(`moveForward was called\nRover current position is (${rover.x};${rover.y})`);
         } else {
-            console.log("You can't place rover outside the board");
+            console.log("You may have faced an obstacle!");
     }
 }
 
@@ -106,7 +106,7 @@ function moveBackward(rover){
     }
 }
 
-
+//Function Command
 function command(rover, orders) {
     for (i = 0; i < orders.length; i++){
         let order = orders[i];
@@ -129,6 +129,5 @@ function command(rover, orders) {
     console.log(rover.travelLog);
 }
 
+//User's Command
 command(theRover,'RFRF');
-
-//console.log(!(obstacleX.includes(theRover.x)));
