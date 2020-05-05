@@ -43,7 +43,7 @@ At the end of the command processing, console will display rover's final positio
 
 I have also included some obstacles! Would you be able to find all of them?
 
-
+graph TD;
     A-->B;
     A-->C;
     B-->D;
