@@ -43,8 +43,15 @@ At the end of the command processing, console will display rover's final positio
 
 I have also included some obstacles! Would you be able to find all of them?
 
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
